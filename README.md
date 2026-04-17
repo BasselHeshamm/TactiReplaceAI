@@ -8,19 +8,19 @@
 
 **TactiReplace** is an AI-driven scouting and recruitment tool that helps analysts, coaches, and clubs find the most statistically similar alternatives to any player across the **Premier League, La Liga, Bundesliga, Serie A, and Ligue 1** for the 2024/25 season.
 
-The system combines unsupervised machine learning with similarity search to deliver intelligent, data-backed player recommendations — filtering by position, age, budget, and playing style.
+The system combines unsupervised machine learning with similarity search to deliver intelligent, data-backed player recommendations, filtering by position, age, budget, and playing style.
 
 ---
 
 ## Features
 
-- **Two-Layer Recommendation Engine** — K-Means clustering groups players by playing style, followed by cosine similarity on per-90 normalized stats to rank the closest replacements
-- **Goalkeeper Support** — Separate pipeline for goalkeeper stats and recommendations
-- **"Describe a Player" Search** — Natural language rule-based search to find players matching a custom profile
-- **Age & Budget Filters** — Market valuations sourced from Transfermarkt to filter candidates by transfer budget
-- **PDF Scouting Reports** — Exportable reports for shortlisted players
-- **Historical Trajectory Analysis** — Player performance trend analysis across past seasons (2017–2024)
-- **All Five Major Leagues** — Full coverage of PL, La Liga, Bundesliga, Serie A, and Ligue 1
+- **Two-Layer Recommendation Engine:** K-Means clustering groups players by playing style, followed by cosine similarity on per-90 normalized stats to rank the closest replacements
+- **Goalkeeper Support:**  Separate pipeline for goalkeeper stats and recommendations
+- **"Describe a Player" Search:** — Natural language rule-based search to find players matching a custom profile
+- **Age & Budget Filters:** Market valuations sourced from Transfermarkt to filter candidates by transfer budget
+- **PDF Scouting Reports:** Exportable reports for shortlisted players
+- **Historical Trajectory Analysis:** Player performance trend analysis across past seasons (2017–2024)
+- **All Five Major Leagues:** Full coverage of PL, La Liga, Bundesliga, Serie A, and Ligue 1
 
 ---
 
@@ -28,7 +28,7 @@ The system combines unsupervised machine learning with similarity search to deli
 
 | Layer | Tools |
 |---|---|
-| Language | Python 3.11 |
+| Language | Python |
 | Data Processing | Pandas, NumPy |
 | Machine Learning | Scikit-learn (K-Means, Cosine Similarity) |
 | Data Sources | FBref (stats), Transfermarkt (valuations) |
@@ -39,12 +39,12 @@ The system combines unsupervised machine learning with similarity search to deli
 
 ## How It Works
 
-1. **Data Collection** — Player stats scraped from FBref across all five leagues, merged with Transfermarkt market valuations
-2. **Preprocessing** — Stats normalized per 90 minutes, missing values handled, goalkeepers separated
-3. **Clustering** — K-Means groups players into clusters based on playing style and statistical profile
-4. **Similarity Search** — Within a player's cluster, cosine similarity ranks the closest alternatives
-5. **Filtering** — Results filtered by position, age range, and transfer budget
-6. **Output** — Recommendations displayed in the UI with optional PDF scouting report export
+1. **Data Collection:** Player stats scraped from FBref across all five leagues, merged with Transfermarkt market valuations
+2. **Preprocessing:** Stats normalized per 90 minutes, missing values handled, goalkeepers separated
+3. **Clustering:** K-Means groups players into clusters based on playing style and statistical profile
+4. **Similarity Search:** Within a player's cluster, cosine similarity ranks the closest alternatives
+5. **Filtering:** Results filtered by position, age range, and transfer budget
+6. **Output:** Recommendations displayed in the UI with optional PDF scouting report export
 
 ---
 
