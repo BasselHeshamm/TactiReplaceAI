@@ -16,7 +16,7 @@ The system combines unsupervised machine learning with similarity search to deli
 
 - **Two-Layer Recommendation Engine:** K-Means clustering groups players by playing style, followed by cosine similarity on per-90 normalized stats to rank the closest replacements
 - **Goalkeeper Support:**  Separate pipeline for goalkeeper stats and recommendations
-- **"Describe a Player" Search:** — Natural language rule-based search to find players matching a custom profile
+- **"Describe a Player" Search:** Natural language rule-based search to find players matching a custom profile
 - **Age & Budget Filters:** Market valuations sourced from Transfermarkt to filter candidates by transfer budget
 - **PDF Scouting Reports:** Exportable reports for shortlisted players
 - **Historical Trajectory Analysis:** Player performance trend analysis across past seasons (2017–2024)
@@ -78,25 +78,3 @@ TactiReplace/
 ├── notebooks/                # Exploratory notebooks
 ├── index.html                # Frontend interface
 └── README.md
-```
-
----
-
-## Data Sources
-
-- **[FBref](https://fbref.com)** — Player statistics (standard, shooting, passing, defense, possession, goalkeeping)
-- **[Transfermarkt](https://www.transfermarkt.com)** — Market valuations and biographical data
-
----
-
-## Academic Context
-
-This project was developed as a graduation thesis at the **German University in Cairo (GUC)**, Faculty of Management Technology, under the supervision of **Dr. Ahmed Okasha**.
-
----
-
-## Author
-
-**Bassel Hesham**
-Business Informatics — German University in Cairo
-[GitHub](https://github.com/BasselHeshamm)
